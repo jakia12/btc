@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  "Bowlby One SC", sans-serif; 
+}
+
+.button_hover img{
+    transition: all .3s ease-in-out;
+}
+
+.button_hover:hover img{
+    transform: scale(1.2);
+}
+
+.button_buy{
+    transition: all .3s ease-in-out;
+}
+
+.button_buy:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* hero */
+.hero h1{
+    text-shadow: 0px 2px 0px #BB133E;
+}
+
+.hero span{
+    font-family:  "Montserrat", sans-serif;
+}
+
+.border_sam::before{
+    content: "";
+
+    position: absolute;
+    width: 300px;
+    height: 30px;
+
+    background-color: #061936;
+    top: -7%;
+}
+
+.border_sam .content p{
+    font-family:  "Montserrat", sans-serif;
+}
+
+
+.border_sam_container{
+    background: radial-gradient(59.75% 62.71% at 50.42% 41.07%, rgba(6, 25, 54, 0.85) 0%, #061936 75.5%);
+}
+ 
+
+/* make */
+.make_crypto{
+    background: linear-gradient(177.45deg, #BB133E 2.13%, rgba(120, 0, 0, 0) 366.45%);
+}
+
+.make_text{
+    font-family: 'MergeW00-Bold', cursive;
+}
+
+.make_crypto .bg .star_bg{
+    animation: star_bg 35s infinite linear;
+}
+
+@keyframes star_bg {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+/* footer */
+footer{
+    font-family:  "Montserrat", sans-serif;
+}
+
+
+/* media queries */
+@media screen and (max-width:500px) {
+    .border_sam::before{ 
+        width: 200px; 
+    }
+    
+}
